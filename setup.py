@@ -16,6 +16,8 @@ history = text(os.path.join('docs', 'HISTORY.txt'))
 install_requires = [
     'setuptools',
     'zope.interface',
+    'dolmen.menu',
+    
     ]
 
 tests_require = [

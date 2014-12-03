@@ -56,3 +56,19 @@ class IUserMenu(IMenu):
 
 class ISubMenu(IMenu):
     pass
+
+
+__all__ = [
+    "IMenu",
+    "IGlobalMenu",
+    "INavigationMenu",
+    "IPersonalPreferences",
+    "IFooterMenu",
+    "IDocumentActions",
+    "IAddMenu",
+    "IExtraViews",
+    "IPersonalMenu",
+    "IContextualActionsMenu",
+    "IUserMenu",
+    "ISubMenu",
+    ]
