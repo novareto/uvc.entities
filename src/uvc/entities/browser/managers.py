@@ -41,3 +41,15 @@ class IFooter(IViewSlot):
 class IExtraInfo(IViewSlot):
     """
     """
+
+
+__all__ = [
+    "IPageTop",
+    "ITabs",
+    "IAboveContent",
+    "IBelowContent",
+    "IHeaders",
+    "IToolbar",
+    "IFooter",
+    "IExtraInfo",
+    ]
