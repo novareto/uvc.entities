@@ -1,0 +1,35 @@
+Browser definitions
+-------------------
+
+    >>> from uvc.entities.browser import IManagers
+    >>> managers = list(IManagers)
+    >>> print managers  # doctest: +NORMALIZE_WHITESPACE
+    ['ITabs', 'IToolbar', 'IFooter', 'IPageTop', 'IHeaders',
+     'IBelowContent', 'IExtraInfo', 'IAboveContent']
+
+    >>> from uvc.entities.browser import IMenus
+    >>> menus = list(IMenus)
+    >>> print menus  # doctest: +NORMALIZE_WHITESPACE
+    ['IMenu', 'IContextualActionsMenu', 'IAddMenu', 'IGlobalMenu',
+     'IFooterMenu', 'IDocumentActions', 'ISubMenu', 'IPersonalMenu',
+     'IUserMenu', 'IPersonalPreferences', 'INavigationMenu', 'IExtraViews']
+
+    >>> from uvc.entities import browser
+    >>> assert set(menus) <= set(dir(browser))
+    >>> assert set(managers) <= set(dir(browser))
+
+
+Site definitions
+----------------
+
+    >>> from uvc.entities import site
+    >>> site.IUVCSite
+    <InterfaceClass uvc.entities.site.IUVCSite>
+
+
+Security definitions
+--------------------
+
+    >>> from uvc.entities import security
+    >>> security.IRoles
+    <InterfaceClass uvc.entities.security.IRoles>
