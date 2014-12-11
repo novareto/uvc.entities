@@ -14,10 +14,10 @@ readme = text(os.path.join('src', 'uvc', 'entities', 'README.txt'))
 history = text(os.path.join('docs', 'HISTORY.txt'))
 
 install_requires = [
+    'cromlech.browser',
+    'dolmen.menu',
     'setuptools',
     'zope.interface',
-    'dolmen.menu',
-    
     ]
 
 tests_require = [
