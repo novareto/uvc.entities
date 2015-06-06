@@ -11,10 +11,15 @@ class IGlobalMenu(IMenu):
 class INavigationMenu(IMenu):
     """Marker for NavigationMenu
     """
-    
+
 
 class IPersonalPreferences(IMenu):
     """Marker for PersonalPreferences
+    """
+
+
+class IQuicklinksMenu(IMenu):
+    """Marker for QuicklinksMenu
     """
 
 
